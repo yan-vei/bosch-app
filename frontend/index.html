@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bosch Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://d3js.org/d3.v7.min.js" charset="utf-8"></script>
+    <script type="application/javascript" src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Order Shipment Processing Dashboard</h1>
+        <div class="item">
+            <p>Two Weeks Average Processing Time</p>
+            <div id="numberDisplayTwoWeeks">N/A</div>
+        </div>
+        <div class="item">
+            <p>Total Average Processing Time</p>
+            <div id="numberDisplayTotal">N/A</div>
+        </div>
+        <div class="item" id="prPieChart">
+        </div>
+        <div class="item">
+            <div id="chart" min-height="500"></div>
+        </div>
+        <div class="item" id="pkPieChart">
+        </div>
+        <div class="item" id="order-form">
+            <form>
+                <h3>New Order</h2>
+                <label for="priority">Priority:</label>
+                <select name="priority" id="priority">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                </select>
+                <br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="item" id="empty">
+        </div>
+    </div>
+</body>
+</html>
